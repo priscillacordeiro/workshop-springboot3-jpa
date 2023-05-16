@@ -25,12 +25,15 @@ public class OrderItemPK implements Serializable {
 	public Order getOrder() {
 		return order;
 	}
+	
 	public void setOrder(Order order) {
 		this.order = order;
 	}
+	
 	public Product getProduct() {
 		return product;
 	}
+	
 	public void setProduct(Product product) {
 		this.product = product;
 	}
@@ -39,6 +42,7 @@ public class OrderItemPK implements Serializable {
 	public int hashCode() {
 		return Objects.hash(order, product);
 	}
+	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
